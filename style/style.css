@@ -10,6 +10,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Cabin, sans-serif;
+  background: #f0eeeb;
 }
 
 img {
@@ -172,6 +173,142 @@ aside span {
   }
   header nav .push_right {
     margin-left: auto;
+  }
+}
+
+.main_image_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.main_image_wrapper .desktop_hero, .main_image_wrapper .tablet_hero {
+  display: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+main h1 {
+  color: #292929;
+}
+
+main p {
+  color: #5a5444;
+}
+
+main .checkmarks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+main .checkmarks .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+main .checkmarks .check p {
+  font-weight: 600;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+}
+
+main form .email {
+  font-family: Cabin;
+  padding: .5rem;
+  font-weight: 500;
+}
+
+main form .submit {
+  font-family: Cabin;
+  padding: .5rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main_image_wrapper {
+    padding: 0 3rem;
+  }
+  .main_image_wrapper .mobile_hero {
+    display: none;
+  }
+  .main_image_wrapper .tablet_hero {
+    display: block;
+  }
+  .main_image_wrapper .tablet_hero {
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main_image_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 6rem;
+    padding: 0 8rem;
+  }
+  .main_image_wrapper .tablet_hero {
+    display: none;
+  }
+  .main_image_wrapper .desktop_hero {
+    display: block;
+    max-width: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    gap: 1.25rem;
+    width: 50%;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main p {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
