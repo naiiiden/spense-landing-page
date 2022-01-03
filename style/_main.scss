@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: 1.5rem;
     padding: 0 1.5rem;
+    background: #f0eeeb;
+    padding-bottom: 1.5rem;
 
     .desktop_hero, .tablet_hero {
         display: none;
@@ -64,6 +66,7 @@ main {
 @media screen and (min-width: 768px) {
     .main_image_wrapper {
         padding: 0 3rem;
+        padding-bottom: 3rem;
 
         .mobile_hero {
             display: none;
@@ -85,7 +88,7 @@ main {
         align-items: center;
         justify-content: space-between;
         gap: 6rem;
-        padding: 0 8rem;
+        padding: 0 8rem 3rem 8rem;
 
         .tablet_hero {
             display: none;

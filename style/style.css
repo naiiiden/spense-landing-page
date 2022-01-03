@@ -10,7 +10,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Cabin, sans-serif;
-  background: #f0eeeb;
 }
 
 img {
@@ -49,6 +48,7 @@ aside span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 1.5rem;
+    background: #f0eeeb;
   }
   header .logo {
     font-weight: 700;
@@ -117,6 +117,7 @@ aside span {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 3rem 3rem;
+    background: #f0eeeb;
   }
   header .logo {
     font-size: 1.25rem;
@@ -186,6 +187,8 @@ aside span {
           flex-direction: column;
   gap: 1.5rem;
   padding: 0 1.5rem;
+  background: #f0eeeb;
+  padding-bottom: 1.5rem;
 }
 
 .main_image_wrapper .desktop_hero, .main_image_wrapper .tablet_hero {
@@ -263,6 +266,7 @@ main form .submit {
 @media screen and (min-width: 768px) {
   .main_image_wrapper {
     padding: 0 3rem;
+    padding-bottom: 3rem;
   }
   .main_image_wrapper .mobile_hero {
     display: none;
@@ -288,7 +292,7 @@ main form .submit {
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 6rem;
-    padding: 0 8rem;
+    padding: 0 8rem 3rem 8rem;
   }
   .main_image_wrapper .tablet_hero {
     display: none;
