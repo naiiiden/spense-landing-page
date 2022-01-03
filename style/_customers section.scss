@@ -1,0 +1,53 @@
+.customers {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        display: none;
+        width: 30%;
+
+        &.facebook, &.dribble, &.youtube {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customers {
+        padding: 3rem;
+        justify-content: space-between;
+
+        img {
+            width: 18%;
+
+            &.pinterest, &.twitter {
+                display: block;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .customers {
+        padding: 3rem 8rem;
+
+        img {
+            width: 11%;
+
+            &.reddit {
+                margin-bottom: .2rem;
+            }
+
+            &.google {
+                margin-top: .3rem;
+            }
+
+            &.reddit, &.google, &.slack {
+                display: block;
+            }
+        }
+    }
+}
