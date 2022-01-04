@@ -482,4 +482,82 @@ main form .submit {
     max-width: 100%;
   }
 }
+
+.text_editor_wrapper {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.text_editor_wrapper article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .75rem;
+}
+
+.text_editor_wrapper article h2 {
+  font-size: 2rem;
+}
+
+.text_editor_wrapper article p {
+  color: #5a5444;
+}
+
+.text_editor_wrapper article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5a5444;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.text_editor_wrapper article a span {
+  font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text_editor_wrapper {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text_editor_wrapper {
+    padding: 3rem 8rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text_editor_wrapper img {
+    width: 50%;
+  }
+  .text_editor_wrapper article {
+    width: 30%;
+  }
+  .text_editor_wrapper article p {
+    font-size: 1.1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
