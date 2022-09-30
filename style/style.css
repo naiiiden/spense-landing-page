@@ -160,40 +160,40 @@ aside {
   display: none;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main h1 {
+.main h1 {
   color: #292929;
 }
-main p {
+.main p {
   color: #5a5444;
 }
-main .checkmarks {
+.main .checkmarks {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-main .checkmarks .check {
+.main .checkmarks .check {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-main .checkmarks .check p {
+.main .checkmarks .check p {
   font-weight: 600;
 }
-main form {
+.main form {
   display: flex;
   gap: 0.5rem;
 }
-main form .email {
+.main form .email {
   font-family: Cabin;
   padding: 0.5rem;
   font-weight: 500;
 }
-main form .submit {
+.main form .submit {
   font-family: Cabin;
   padding: 0.5rem;
   background: #000;
@@ -236,14 +236,14 @@ main form .submit {
   }
 }
 @media screen and (min-width: 1440px) {
-  main {
+  .main {
     gap: 1.25rem;
     width: 50%;
   }
-  main h1 {
+  .main h1 {
     font-size: 3rem;
   }
-  main p {
+  .main p {
     font-size: 1.1rem;
   }
 }
