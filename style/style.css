@@ -6,6 +6,10 @@
   line-height: 1.5;
 }
 
+.started, input[type=submit] {
+  outline-offset: 0.25rem;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
